@@ -1,2 +1,4 @@
 # matnsaazz
-a collection of lorem ipsum text, created by reactjs
+a generator of lorem ipsum text, created by reactjs 
+for your design
+
