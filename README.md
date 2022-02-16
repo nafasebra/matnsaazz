@@ -1,4 +1,8 @@
 # matnsaazz
-a generator of lorem ipsum text, created by reactjs 
-for your design
+a the generator of meaningless text like lorem ipsum, powered by React.js
+
+use the generator for design or application
+
+
+
 
