@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function TextView() {
   return (
-    <>
-      <textarea className='w-full resize-none border-3' readOnly></textarea>
-      <button className='w-full py-3'>کپی کن!</button>
-    </>
-  )
+    <div className="mt-8">
+      <div className="w-full resize-none border-2 border-gray-400 bg-white rounded-lg min-h-[150px] my-4"></div>
+      <button className="w-full py-3 bg-dark text-white rounded-lg hover:opacity-60">
+        کپی کن!
+      </button>
+    </div>
+  );
 }
 
-export default TextView
+export default TextView;

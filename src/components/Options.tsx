@@ -14,10 +14,11 @@ function Options() {
         />
         <label
           htmlFor="paragraph"
-          className="flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+          className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 ml-3 transition-none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
@@ -30,24 +31,25 @@ function Options() {
             <line x1="10" y1="12" x2="20" y2="12" />
             <line x1="6" y1="18" x2="20" y2="18" />
           </svg>
-          <span>پاراگراف</span>
+          <span className="font-bold">پاراگراف</span>
         </label>
       </div>
       <div className="ml-5">
         <input
           type="radio"
-          id="paragraph"
+          id="sentence"
           name="hosting"
-          value="paragraph"
+          value="sentence"
           className="hidden peer"
           required
         />
         <label
-          htmlFor="paragraph"
-          className="flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+          htmlFor="sentence"
+          className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 ml-3 transition-none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
@@ -60,27 +62,28 @@ function Options() {
             <line x1="10" y1="12" x2="20" y2="12" />
             <line x1="6" y1="18" x2="20" y2="18" />
           </svg>
-          <span>جمله</span>
+          <span className="font-bold">جمله</span>
         </label>
       </div>
       <div className="ml-5">
         <input
           type="radio"
-          id="paragraph"
+          id="word"
           name="hosting"
-          value="paragraph"
+          value="word"
           className="hidden peer"
           required
         />
         <label
-          htmlFor="paragraph"
-          className="flex justify-between items-center p-5 w-full text-gray-500 bg-white rounded-lg border border-gray-200 cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+          htmlFor="word"
+          className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 ml-3 transition-none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#2c3e50"
+            stroke="currentColor"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -90,7 +93,7 @@ function Options() {
             <line x1="12" y1="6" x2="12" y2="18" />
             <path d="M16 16v-8h3a2 2 0 0 1 0 4h-3m3 0a2 2 0 0 1 0 4h-3" />
           </svg>
-          <span>کلمه</span>
+          <span className="font-bold">کلمه</span>
         </label>
       </div>
     </div>

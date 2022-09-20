@@ -4,10 +4,11 @@ import Options from "./Options";
 function Header() {
   return (
     <div className="flex items-center justify-between">
+      <Options />
       <button className="text-dark">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
+          className="w-8 h-8"
           viewBox="0 0 24 24"
           stroke-width="2"
           stroke="currentColor"
@@ -23,8 +24,6 @@ function Header() {
           <circle cx="8.5" cy="15.5" r=".5" fill="currentColor" />
         </svg>
       </button>
-
-      <Options />
     </div>
   );
 }
