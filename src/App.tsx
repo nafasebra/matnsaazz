@@ -6,7 +6,7 @@ import TextView from './components/TextView'
 function App() {
   return (
     <>
-      <div className='w-[90] md:w-[600px] mx-auto'>
+      <div className='w-[90%] md:w-[600px] mx-auto'>
         <Hero />
         <Header />
         <TextView />
