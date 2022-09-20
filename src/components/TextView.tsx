@@ -2,7 +2,10 @@ import React from 'react'
 
 function TextView() {
   return (
-    <div>TextView</div>
+    <>
+      <textarea className='w-full resize-none border-3' readOnly></textarea>
+      <button className='w-full py-3'>کپی کن!</button>
+    </>
   )
 }
 
