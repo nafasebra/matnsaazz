@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Menu from "./Menu";
 
+import { TextContext } from "../context/TextContext";
+
 function Options() {
+  const useTextContext = useContext(TextContext);
+
   return (
     <>
       <Menu />
@@ -9,6 +13,8 @@ function Options() {
         <div className="ml-5">
           <input
             type="radio"
+            checked={useTextContext.textState === "paragraph"}
+            onChange={() => useTextContext.setTextState("paragraph")}
             id="paragraph"
             name="hosting"
             value="paragraph"
@@ -40,6 +46,8 @@ function Options() {
         <div className="ml-5">
           <input
             type="radio"
+            checked={useTextContext.textState === "sentence"}
+            onChange={() => useTextContext.setTextState("sentence")}
             id="sentence"
             name="hosting"
             value="sentence"
@@ -71,6 +79,8 @@ function Options() {
         <div className="ml-5">
           <input
             type="radio"
+            checked={useTextContext.textState === "word"}
+            onChange={() => useTextContext.setTextState("word")}
             id="word"
             name="hosting"
             value="word"
