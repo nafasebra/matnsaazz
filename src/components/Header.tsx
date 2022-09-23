@@ -1,11 +1,13 @@
 import React from "react";
 import Options from "./Options";
+import Tooltip from "./Tooltip";
 
 function Header() {
   return (
     <div className="flex items-center justify-between">
       <Options />
-      <button className="text-dark">
+      <button className="text-dark group relative">
+        <Tooltip text="متن تصادفی" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-8 h-8"
