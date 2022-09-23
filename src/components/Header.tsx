@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TextContext } from "../context/TextContext";
+import { data } from "../data";
+import { ShuffleArray } from "../helper";
 import Options from "./Options";
 import Tooltip from "./Tooltip";
 
 function Header() {
+  const useTextContext = useContext(TextContext);
+
+  const SetRandomData = () => {
+    useTextContext.setTextData(
+      ShuffleArray(data) || { paragraph: "", sentence: "", word: "" }
+    );
+  };
+
   return (
     <div className="flex items-center justify-between">
       <Options />
-      <button className="text-dark group relative">
+      <button onClick={SetRandomData} className="text-dark group relative">
         <Tooltip text="متن تصادفی" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
