@@ -15,9 +15,9 @@ function Header() {
   };
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="w-full flex flex-col lg:flex-row lg:items-center justify-between">
       <Options />
-      <button onClick={SetRandomData} className="text-dark group relative">
+      <button onClick={SetRandomData} className="text-dark group bg-gray-100 lg:bg-transparent relative py-3 mt-5 lg:mt-0 flex items-center justify-center">
         <Tooltip text="متن تصادفی" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +36,7 @@ function Header() {
           <circle cx="15.5" cy="15.5" r=".5" fill="currentColor" />
           <circle cx="8.5" cy="15.5" r=".5" fill="currentColor" />
         </svg>
+        <span className="block lg:hidden mr-3 font-bold">متن تصادفی</span>
       </button>
     </div>
   );

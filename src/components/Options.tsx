@@ -8,9 +8,10 @@ function Options() {
 
   return (
     <>
-      <Menu />
-      <div className="hidden md:flex items-center">
-        <div className="ml-5">
+      {/* :D فعلا این کامپوننت منو رو غیر فعال کردم که اگر بعدا قرار شد امکاناتی اضافه بشه فعالش کنم */}
+      {/* <Menu /> */}
+      <div className="flex flex-col lg:flex-row">
+        <div className="my-2 lg:my-0 lg:ml-5">
           <input
             type="radio"
             checked={useTextContext.textState === "paragraph"}
@@ -23,7 +24,7 @@ function Options() {
           />
           <label
             htmlFor="paragraph"
-            className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +44,7 @@ function Options() {
             <span className="font-bold">پاراگراف</span>
           </label>
         </div>
-        <div className="ml-5">
+        <div className="my-2 lg:my-0 lg:ml-5">
           <input
             type="radio"
             checked={useTextContext.textState === "sentence"}
@@ -56,7 +57,7 @@ function Options() {
           />
           <label
             htmlFor="sentence"
-            className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +77,7 @@ function Options() {
             <span className="font-bold">جمله</span>
           </label>
         </div>
-        <div className="ml-5">
+        <div className="my-2 lg:my-0 lg:ml-5">
           <input
             type="radio"
             checked={useTextContext.textState === "word"}
@@ -89,7 +90,7 @@ function Options() {
           />
           <label
             htmlFor="word"
-            className="flex justify-between items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
