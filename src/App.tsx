@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TextView from "./components/TextView";
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <TextView />
         </TextProvider>
+        <Footer />
       </div>
     </>
   );
