@@ -15,12 +15,7 @@ type ContextType = {
   setTextData: (d: DataType) => void;
 };
 
-export const TextContext = createContext<ContextType>({
-  textState: "paragraph",
-  textData: { paragraph: "", sentence: "", word: "" },
-  setTextState: () => {},
-  setTextData: () => {},
-});
+export const TextContext = createContext<ContextType>({} as ContextType);
 
 export const TextProvider = ({ children }: IPropType) => {
   const [textState, setTextState] = useState<TextType>("paragraph");
