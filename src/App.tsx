@@ -11,14 +11,16 @@ function App() {
   return (
     <>
       <ThemeProvider initialTheme="light">
-        <div className="w-[90%] bg-secondary md:w-[600px] mx-auto relative">
-          <ToggleButton />
-          <Hero />
-          <TextProvider>
-            <Header />
-            <TextView />
-          </TextProvider>
-          <Footer />
+        <div className=" bg-secondary mx-auto px-4 flex justify-center items-center">
+          <div className="w-[90%] md:w-[600px] relative">
+            <ToggleButton />
+            <Hero />
+            <TextProvider>
+              <Header />
+              <TextView />
+            </TextProvider>
+            <Footer />
+          </div>
         </div>
       </ThemeProvider>
     </>

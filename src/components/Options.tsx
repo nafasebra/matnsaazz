@@ -24,7 +24,7 @@ function Options() {
           />
           <label
             htmlFor="paragraph"
-            className="flex justify-center items-center py-2 px-5 w-full text-secondary bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
