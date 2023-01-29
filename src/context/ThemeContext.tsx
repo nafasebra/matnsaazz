@@ -52,3 +52,5 @@ const ThemeProvider = ({ children, initialTheme }: ContextType) => {
         </ThemeContext.Provider>
     )
 }
+
+export default ThemeProvider
