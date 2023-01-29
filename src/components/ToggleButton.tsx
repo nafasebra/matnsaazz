@@ -3,15 +3,14 @@ import { ThemeContext } from "../context/ThemeContext";
 const ToggleButton = () => {
     const { theme, setTheme } = useContext(ThemeContext)
 
-    const isDark = () => {
-        return theme === "dark"
-    }
+    console.log(theme)
+
     const handelToggleChange = () => {
-        setTheme(theme === "light" ? "dark" : "light")
+        setTheme(prevTheme => prevTheme === "dark" ? "light" : "dark")
     };
 
     return (
-        <div className="flex justify-center items-center absolute top-8 w-12 h-12 rounded-3xl bg-slate-800 cursor-pointer" onClick={handelToggleChange}>
+        <div className="flex justify-center items-center absolute top-8 w-12 h-12 rounded-3xl bg-button cursor-pointer" onClick={handelToggleChange}>
             {theme === "light" ?
                 <svg
                     className="absolute w-8 h-8 fill-white"

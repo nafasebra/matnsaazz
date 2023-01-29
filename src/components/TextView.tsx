@@ -22,15 +22,15 @@ function TextView() {
 
   return (
     <div className="mt-8">
-      <div className="py-3 px-5 w-full resize-none border-2 border-gray-400 bg-white rounded-lg min-h-[150px] my-4">
+      <div className="py-3 px-5 w-full resize-none border-2 border-gray-400 bg-primary text-primary rounded-lg min-h-[150px] my-4">
         {useTextContext.textData[useTextContext.textState]}
       </div>
       <button
         onClick={ClickHandler}
         disabled={stateCopyText}
-        className={`w-full py-3 shadow-box text-white rounded-lg ${stateCopyText ? "bg-custom-green" : " bg-dark hover:opacity-60"}`}
+        className={`w-full py-3 shadow-box text-white rounded-lg ${stateCopyText ? "bg-custom-green" : " bg-button hover:opacity-60"}`}
       >
-       {stateCopyText ? 'متن کپی شد!' : ' متن رو کپی کن!'}
+        {stateCopyText ? 'متن کپی شد!' : ' متن رو کپی کن!'}
       </button>
     </div>
   );

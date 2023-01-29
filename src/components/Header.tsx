@@ -17,7 +17,7 @@ function Header() {
   return (
     <div className="w-full flex flex-col lg:flex-row lg:items-center justify-between">
       <Options />
-      <button onClick={SetRandomData} className="text-dark group bg-gray-100 lg:bg-transparent relative py-3 mt-5 lg:mt-0 flex items-center justify-center">
+      <button onClick={SetRandomData} className="text-secondary group bg-primary lg:bg-transparent relative py-3 mt-5 lg:mt-0 flex items-center justify-center">
         <Tooltip text="متن تصادفی" />
         <svg
           xmlns="http://www.w3.org/2000/svg"

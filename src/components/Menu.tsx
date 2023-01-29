@@ -19,8 +19,8 @@ function Menu() {
           />
         </svg>
       </button>
-      <ul className="bg-white shadow-box absolute top-7 right-0 invisible opacity-0 group-hover:visible group-hover:opacity-100">
-        <li className="flex items-center py-3 px-5 hover:bg-gray-200 select-none cursor-pointer">
+      <ul className="bg-primary shadow-box absolute top-7 right-0 invisible opacity-0 group-hover:visible group-hover:opacity-100">
+        <li className="flex items-center py-3 px-5 hover:bg-secondary select-none cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6 ml-3 transition-none"

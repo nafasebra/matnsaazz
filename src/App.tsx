@@ -10,8 +10,8 @@ import ThemeProvider from "./context/ThemeContext";
 function App() {
   return (
     <>
-      <div className="w-[90%] md:w-[600px] mx-auto relative">
-        <ThemeProvider initialTheme="light">
+      <ThemeProvider initialTheme="light">
+        <div className="w-[90%] bg-secondary md:w-[600px] mx-auto relative">
           <ToggleButton />
           <Hero />
           <TextProvider>
@@ -19,8 +19,8 @@ function App() {
             <TextView />
           </TextProvider>
           <Footer />
-        </ThemeProvider>
-      </div>
+        </div>
+      </ThemeProvider>
     </>
   );
 }
