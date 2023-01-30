@@ -1,17 +1,15 @@
-import React from "react";
-
 function Hero() {
   return (
     <div className="py-20 flex flex-col items-center">
-      <h1 className="font-bold text-4xl text-center">متن ساز</h1>
-      <p className="text-center pt-7 font-bold text-gray-400">
+      <h1 className="font-bold text-4xl text-center text-primary">متن ساز</h1>
+      <p className="text-center pt-7 font-bold text-secondary">
         یه اپ خودمونی برای ساخت متن های تستی (مشابه لورم ایپسوم) 😁🙌
         <br />
         برای کسانی که حال ندارن خودشون متن بنویسن 🤣
       </p>
       <a
         href="https://github.com/nafasebra/matnsaazz"
-        className="mt-5 py-2 px-5 shodow-box bg-dark flex items-center justify-center rounded-lg text-white hover:opacity-60"
+        className="mt-5 py-2 px-5 shodow-box bg-button flex items-center justify-center rounded-lg text-white hover:opacity-60"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

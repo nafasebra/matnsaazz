@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import Menu from "./Menu";
+import { useContext } from "react";
 
 import { TextContext } from "../context/TextContext";
 
@@ -24,7 +23,7 @@ function Options() {
           />
           <label
             htmlFor="paragraph"
-            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-secondary  rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-primary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +56,7 @@ function Options() {
           />
           <label
             htmlFor="sentence"
-            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-secondary rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-primary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +89,7 @@ function Options() {
           />
           <label
             htmlFor="word"
-            className="flex justify-center items-center py-2 px-5 w-full text-gray-500 bg-white rounded-lg border-2 border-dark cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100"
+            className="flex justify-center items-center py-2 px-5 w-full text-secondary  rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-gray-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

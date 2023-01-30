@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import { DataType, data } from "../data";
 import { ShuffleArray } from "../helper";
 
