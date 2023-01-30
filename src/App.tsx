@@ -10,7 +10,7 @@ import ThemeProvider from "./context/ThemeContext";
 function App() {
   return (
     <>
-      <ThemeProvider initialTheme="light">
+      <ThemeProvider>
         <div className=" bg-secondary mx-auto px-4 flex justify-center items-center">
           <div className="w-[90%] md:w-[600px] relative">
             <ToggleButton />

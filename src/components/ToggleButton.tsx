@@ -2,9 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 const ToggleButton = () => {
     const { theme, setTheme } = useContext(ThemeContext)
-
-    console.log(theme)
-
+    
     const handelToggleChange = () => {
         setTheme(prevTheme => prevTheme === "dark" ? "light" : "dark")
     };

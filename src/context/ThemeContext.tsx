@@ -4,7 +4,6 @@ type Theme = "light" | "dark"
 
 type ContextType = {
     children: React.ReactNode
-    initialTheme: Theme
 }
 
 type ThemeStateType = {
@@ -27,7 +26,7 @@ const getInitialTheme = (): string => {
 
 export const ThemeContext = createContext<ThemeStateType>({} as ThemeStateType)
 
-const ThemeProvider = ({ children, initialTheme }: ContextType) => {
+const ThemeProvider = ({ children }: ContextType) => {
     const [theme, setTheme] = useState<string>(getInitialTheme)
 
     const rawSetTheme = (theme: string) => {
@@ -39,8 +38,6 @@ const ThemeProvider = ({ children, initialTheme }: ContextType) => {
 
         localStorage.setItem('color-theme', theme)
     }
-
-    if (initialTheme) rawSetTheme(initialTheme)
 
     useEffect(() => {
         rawSetTheme(theme)
