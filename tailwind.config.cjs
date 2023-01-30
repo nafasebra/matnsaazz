@@ -16,14 +16,17 @@ module.exports = {
       backgroundColor: {
         primary: 'var(--color-bg-primary)',
         secondary: 'var(--color-bg-secondary)',
-        button: "var(--color-bg-button)"
-
+        button: "var(--color-bg-button)",
+        buttonSecondary: "var(--color-bg-button-secondary)"
       },
       textColor: {
-        accent: 'var(--color-border-accent)',
         primary: 'var(--color-text-primary)',
         secondary: 'var(--color-text-secondary)',
+        accent: "var(--color-text-accent)"
       },
+      borderColor: {
+        accent: 'var(--color-border-accent)',
+      }
     },
   },
   plugins: [],
