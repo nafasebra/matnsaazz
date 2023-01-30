@@ -1,5 +1,17 @@
 import { createContext, useEffect, useState } from "react";
 
+type Theme = "light" | "dark"
+
+type ContextType = {
+    children: React.ReactNode
+    initialTheme: Theme
+}
+
+type ThemeStateType = {
+    theme: string
+    setTheme: React.Dispatch<React.SetStateAction<string>>
+}
+
 const getInitialTheme = (): string => {
     if (typeof window !== undefined && window.localStorage) {
         const colorPrefers = window.localStorage.getItem("color-theme")
@@ -11,16 +23,6 @@ const getInitialTheme = (): string => {
     }
     // default theme
     return "light"
-}
-
-type ContextType = {
-    children: React.ReactNode
-    initialTheme: string
-}
-
-type ThemeStateType = {
-    theme: string
-    setTheme: React.Dispatch<React.SetStateAction<string>>
 }
 
 export const ThemeContext = createContext<ThemeStateType>({} as ThemeStateType)
@@ -38,9 +40,7 @@ const ThemeProvider = ({ children, initialTheme }: ContextType) => {
         localStorage.setItem('color-theme', theme)
     }
 
-    if (initialTheme) {
-        rawSetTheme(initialTheme)
-    }
+    if (initialTheme) rawSetTheme(initialTheme)
 
     useEffect(() => {
         rawSetTheme(theme)
