@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import Menu from "./Menu";
+import { useContext } from "react";
 
 import { TextContext } from "../context/TextContext";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Menu() {
   return (
     <div className="block md:hidden relative group">

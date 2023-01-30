@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { TextContext } from "../context/TextContext";
 import { data } from "../data";
 import { ShuffleArray } from "../helper";

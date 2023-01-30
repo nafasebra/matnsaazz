@@ -1,5 +1,3 @@
-import React from "react";
-
 function Hero() {
   return (
     <div className="py-20 flex flex-col items-center">

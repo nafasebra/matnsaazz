@@ -1,6 +1,5 @@
-import React, { useCallback, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { TextContext } from "../context/TextContext";
-import { data } from "../data";
 import { CopyText } from "../helper";
 
 function TextView() {
@@ -22,7 +21,7 @@ function TextView() {
 
   return (
     <div className="mt-8">
-      <div className="py-3 px-5 w-full resize-none border-2 border-gray-400 bg-primary text-primary rounded-lg min-h-[150px] my-4">
+      <div className="py-3 px-5 w-full resize-none border-2 border-accent bg-primary text-primary rounded-lg min-h-[150px] my-4">
         {useTextContext.textData[useTextContext.textState]}
       </div>
       <button
