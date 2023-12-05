@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
-import { TextContext } from "../context/TextContext";
-import { CopyText } from "../helper";
+import { TextContext } from "@/context/TextContext";
+import { CopyText } from "@/helper";
 
 function TextView() {
   const [stateCopyText, setStateCopyText] = useState<boolean>(false);

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "@/context/ThemeContext";
 const ToggleButton = () => {
     const { theme, setTheme } = useContext(ThemeContext)
     

@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-import { DataType, data } from "../data";
-import { ShuffleArray } from "../helper";
+import { DataType, data } from "@/data";
+import { ShuffleArray } from "@/helper";
 
 type IPropType = {
   children: JSX.Element[] | JSX.Element;

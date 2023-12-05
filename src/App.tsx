@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import TextView from "./components/TextView";
-import ToggleButton from "./components/ToggleButton";
-import { TextProvider } from "./context/TextContext";
-import ThemeProvider from "./context/ThemeContext";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
+import Hero from "./components/layout/Hero";
+import TextView from "@/components/ui/TextView";
+import ToggleButton from "@/components/ui/ToggleButton";
+import { TextProvider } from "@/context/TextContext";
+import ThemeProvider from "@/context/ThemeContext";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { TextContext } from "../context/TextContext";
+import { TextContext } from "@/context/TextContext";
 
 function Options() {
   const useTextContext = useContext(TextContext);

@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { TextContext } from "../context/TextContext";
-import { data } from "../data";
-import { ShuffleArray } from "../helper";
-import Options from "./Options";
-import Tooltip from "./Tooltip";
+import { TextContext } from "@/context/TextContext";
+import { data } from "@/data";
+import { ShuffleArray } from "@/helper";
+import Options from "@/ui/Options";
+import Tooltip from "@/ui/Tooltip";
 
 function Header() {
   const useTextContext = useContext(TextContext);
