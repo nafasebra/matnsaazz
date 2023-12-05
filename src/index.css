@@ -27,16 +27,16 @@ html.dark {
 @font-face {
   font-family: "vazir";
   font-weight: 500;
-  src: url("../src/assets/Vazir-Regular-FD.ttf") format("truetype"),
-    url("../src/assets/Vazir-Regular-FD.woff") format("woff"),
-    url("../src/assets/Vazir-Regular-FD.woff2") format("woff2");
+  src: url("../src/assets/fonts/Vazir-Regular-FD.ttf") format("truetype"),
+    url("../src/assets/fonts/Vazir-Regular-FD.woff") format("woff"),
+    url("../src/assets/fonts/Vazir-Regular-FD.woff2") format("woff2");
 }
 @font-face {
   font-family: "vazir";
   font-weight: 800;
-  src: url("../src/assets/Vazir-Bold-FD.ttf") format("truetype"),
-    url("../src/assets/Vazir-Bold-FD.woff") format("woff"),
-    url("../src/assets/Vazir-Bold-FD.woff2") format("woff2");
+  src: url("../src/assets/fonts/Vazir-Bold-FD.ttf") format("truetype"),
+    url("../src/assets/fonts/Vazir-Bold-FD.woff") format("woff"),
+    url("../src/assets/fonts/Vazir-Bold-FD.woff2") format("woff2");
 }
 
 *,
@@ -76,7 +76,7 @@ body::before {
   z-index: -1;
   width: 100%;
   height: 300px;
-  background-image: url("./assets/image/curve.svg");
+  background-image: url("./assets/fonts/image/curve.svg");
   background-size: 100%;
   background-position: top;
 }
