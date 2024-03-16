@@ -58,6 +58,8 @@ html.dark {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   direction: rtl;
+  background-color: var(--color-bg-secondary);
+  transition: none;
 }
 
 body {
