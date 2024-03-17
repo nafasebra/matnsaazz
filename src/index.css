@@ -58,6 +58,8 @@ html.dark {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   direction: rtl;
+  background-color: var(--color-bg-secondary);
+  transition: none;
 }
 
 body {
@@ -79,4 +81,7 @@ body::before {
   background-image: url("./assets/fonts/image/curve.svg");
   background-size: 100%;
   background-position: top;
+}
+main {
+  flex: 1;
 }
