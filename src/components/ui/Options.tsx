@@ -67,7 +67,7 @@ function Options() {
             />
             <label
               htmlFor="sentence"
-              className="flex justify-center items-center py-2 px-5 w-full text-secondary rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-primary"
+              className="flex justify-center items-center py-2 px-5 w-full text-secondary  rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function Options() {
             />
             <label
               htmlFor="word"
-              className="flex justify-center items-center py-2 px-5 w-full text-secondary  rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-gray-600"
+              className="flex justify-center items-center py-2 px-5 w-full text-secondary  rounded-lg border-2 border-dark cursor-pointer peer-checked:border-accent peer-checked:text-accent hover:text-primary"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
