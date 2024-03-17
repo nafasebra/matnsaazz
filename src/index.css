@@ -82,6 +82,8 @@ body::before {
   background-size: 100%;
   background-position: top;
 }
+
 main {
+  width: 100%;
   flex: 1;
 }
